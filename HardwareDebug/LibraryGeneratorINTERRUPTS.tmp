@@ -1,0 +1,7 @@
+-MAKEUD_LBG="E:\E2STUDIO_PROJECTS\INTERRUPTS\HardwareDebug\\INTERRUPTS_lbg.ud"
+-isa=rxv1
+-nofpu
+-lang=c99
+-head=runtime,stdio,stdlib,string,new
+-output="INTERRUPTS.lib"
+-nologo

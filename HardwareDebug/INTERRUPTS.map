@@ -1,0 +1,102 @@
+Renesas Optimizing Linker (W3.05.00 )             29-Sep-2023 15:41:28
+
+*** Options ***
+
+-subcommand=LinkerINTERRUPTS.tmp
+-MAKEUD=E:\E2STUDIO_PROJECTS\INTERRUPTS\HardwareDebug/INTERRUPTS_l.ud
+-noprelink
+-input=".\src\INTERRUPTS.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/Config_SCI12\Config_SCI12.obj"
+-input=".\src/smc_gen/Config_SCI12\Config_SCI12_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx130\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\vecttbl.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\INTERRUPTS.lib"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFF80000,FIXEDVECT/0FFFFFF80
+-output="INTERRUPTS.abs"
+-form=absolute
+-nomessage
+-vect=_undefined_interrupt_source_isr
+-list=INTERRUPTS.map
+-nooptimize
+-rom=D=R,D_1=R_1,D_2=R_2
+-cpu=RAM=00000000-0000bfff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0008dfff,FIX=00090000-0009ffff,FIX=000a0000-000bffff,FIX=000c0000-000fffff,ROM=00100000-00101fff,FIX=007fc000-007fc4ff,FIX=007ffc00-007fffff,ROM=fff80000-ffffffff
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00000403       400   4
+SI
+                                  00000404  00000503       100   4
+B_1
+                                  00000504  0000053e        3b   1
+R_1
+                                  0000053f  00000590        52   1
+B_2
+                                  00000592  000005a1        10   2
+R_2
+                                  000005a2  000005a2         0   1
+B
+                                  000005a4  00000b0f       56c   4
+R
+                                  00000b10  00000c17       108   4
+PResetPRG
+                                  fff80000  fff80053        54   1
+C_1
+                                  fff80054  fff80054         0   1
+C_2
+                                  fff80054  fff8005b         8   2
+C
+                                  fff8005c  fff800d3        78   4
+C$DSEC
+                                  fff800d4  fff800f7        24   4
+C$BSEC
+                                  fff800f8  fff8010f        18   4
+C$VECT
+                                  fff80110  fff8050f       400   4
+D
+                                  fff80510  fff80617       108   4
+D_1
+                                  fff80618  fff80669        52   1
+D_2
+                                  fff8066a  fff8066a         0   1
+W
+                                  fff8066c  fff8066c         0   4
+W_1
+                                  fff8066c  fff8067b        10   1
+W_2
+                                  fff8067c  fff8067c         0   2
+L
+                                  fff8067c  fff806c9        4e   4
+P
+                                  fff806ca  fff820de      1a15   1
+FIXEDVECT
+                                  ffffff80  ffffffff        80   4

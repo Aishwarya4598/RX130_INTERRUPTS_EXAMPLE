@@ -1,0 +1,20 @@
+-isa=rxv1
+-nofpu
+-MAKEUD="E:\E2STUDIO_PROJECTS\INTERRUPTS\HardwareDebug\src"
+-include="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\/include"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\r_pincfg"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\r_config"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\r_bsp"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\general"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\Config_PORT"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\Config_ICU"
+-include="E:\E2STUDIO_PROJECTS\INTERRUPTS\src\smc_gen\Config_SCI12" 
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src"
+-debug
+-outcode=utf8
+-optimize=0
+-nologo 
